@@ -1,33 +1,31 @@
-# Clustering of Features Extracted from Masks 🧬
+# Clustering of Morphological and Textural Features from Masks
 
-This project applies clustering techniques to analyze and group morphological and textural features extracted from masks. The goal is to identify underlying patterns using unsupervised machine learning methods such as KMeans and fuzzy c-means.
+This repository contains a complete project focused on unsupervised clustering of morphological and textural features extracted from mask data. The goal is to identify hidden patterns and structures using algorithms such as **KMeans** and **Fuzzy C-Means**. The analysis is performed entirely using Python’s scientific stack, with clear visualizations and metric-based evaluation.
 
-## 📁 Project Structure
-
-- **CaracteristicasExtraidasdeMascaras.xlsx**  
-  Excel file containing extracted features such as `Texture`, `Perimeter`, `Cx`, `Cy`, `Concave`, `Concave_Points`, `Smoothness`, and `Label`. This is the dataset used for clustering.
+## 🗂 Repository Structure
 
 - **clustering.ipynb**  
-  Jupyter Notebook that contains the full analysis workflow:
-  - Data loading and exploratory analysis
-  - Data preprocessing (feature selection and normalization)
-  - Application of KMeans and fuzzy c-means clustering
-  - Cluster evaluation and visualization
-  - Metric analysis and interpretation of results
+  Main notebook containing the full analysis pipeline: loading the dataset, preprocessing, applying clustering algorithms, visualizing the results, and evaluating the clusters.
 
-## 🧪 Technologies and Libraries Used
+- **CaracteristicasExtraidasdeMascaras.xlsx**  
+  Excel file containing the extracted features used as input for the clustering algorithms. Includes fields like `Texture`, `Perimeter`, `Cx`, `Cy`, `Concave`, `Concave_Points`, `Smoothness`, and `Label`.
 
-- pandas
-- numpy
-- seaborn
-- matplotlib
-- scikit-learn
-- scikit-fuzzy
-- tqdm
+- **readme.md**  
+  This documentation file, providing project overview, structure, skills demonstrated, and usage instructions.
 
-## ▶️ How to Use
+## 💡 Demonstrated Skills
 
-1. Clone this repository:
+- Manual application and comparison of unsupervised clustering techniques (KMeans and Fuzzy C-Means).
+- Data preprocessing including feature selection and normalization.
+- Exploratory Data Analysis (EDA) using pandas, seaborn, and matplotlib.
+- Visualization of clustering results with insightful plots and dimensionality reduction.
+- Evaluation of clustering quality using silhouette score and visual interpretation.
+- Efficient use of Python libraries for scientific computing and machine learning:
+  - `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `scikit-fuzzy`, and `tqdm`.
+- Clear documentation and well-organized notebook for reproducibility and recruitment-readiness.
+
+## ▶️ How to Run
+
+1. Install the required dependencies:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   pip install numpy pandas matplotlib seaborn scikit-learn scikit-fuzzy tqdm
